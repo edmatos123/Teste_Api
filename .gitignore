@@ -1,5 +1,15 @@
-/.settings/
-/.classpath
-/.project
-/.allure/
+# Eclipse
+.project
+.classpath
+.settings/
+
+# Maven
 target/
+
+# Allure
+.allure/
+allure-results/
+allure-report/
+
+# Logs
+*.log
