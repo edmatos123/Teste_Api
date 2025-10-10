@@ -15,8 +15,8 @@ public class Usuario {
     private String last_name;
     private String avatar;
   //Considerar o ID quando quando convertido em JSON(SEREALIZAÇÃO) || Desconsiderar o ID quando convertido em Objeto(DESEREALIZAÇÃO)    
-   //@JsonProperty(access = JsonProperty.Access.WRITE_ONLY)    
-   @JsonProperty(access = JsonProperty.Access.READ_ONLY)
+   @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)    
+   //@JsonProperty(access = JsonProperty.Access.READ_ONLY)
    private Long id;
     
     
