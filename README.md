@@ -49,6 +49,8 @@ Teste_Api
 | 5 | Alterar nome de um usuário (PUT) | ✔️ |
 | 6 | Deletar um usuário (DELETE) | ✔️ |
 
+Observação: Não foi possível tratar outras exceções em virtude das limitações da API. 
+
 ---
 ## 📸 Relatório Allure (exemplos)
 
