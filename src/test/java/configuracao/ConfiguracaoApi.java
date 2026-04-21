@@ -30,7 +30,7 @@ public class ConfiguracaoApi {
        
        requisicaoPadrao = new RequestSpecBuilder()
     		   					.setContentType(ContentType.JSON)
-    		    				.addHeader("x-api-key","reqres-free-v1")
+    		    				.addHeader("x-api-key","reqres_24291cb04e394593910de8b21f2c5f38")
     		    				.addFilter(new AllureRestAssured())   		    				
     		    				.log(LogDetail.ALL)
     		    				.build();
