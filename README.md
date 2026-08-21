@@ -16,6 +16,7 @@ Demonstrar a automação de testes em uma API pública (https://reqres.in) cobri
 - 🔗 **RestAssured**
 - 🧙 **Java Faker**
 - 📊 **Allure Report**
+- ⚙️ **GitHub Actions**
 
 ---
 ## 🏗️ Estrutura do projeto (conforme repositório)
