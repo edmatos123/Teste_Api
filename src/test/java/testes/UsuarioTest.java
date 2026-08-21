@@ -1,5 +1,6 @@
 package testes;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.MethodOrderer.OrderAnnotation;
 import org.junit.jupiter.api.Order;
@@ -10,16 +11,32 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import java.util.List;
 import static org.hamcrest.CoreMatchers.is;
 
-import configuracao.ConfiguracaoApi;
+import dados.UsuarioFalso;
 import io.qameta.allure.*;
+import io.restassured.specification.RequestSpecification;
 import modelo.Usuario;
-
+import servicos.UsuarioServico;
+import configuracao.ConfiguracaoRegrs;
 
 
 @Epic("API REQRES.IN")
 @Feature("CRUD USUARIO")
 @TestMethodOrder(OrderAnnotation.class)
-public class UsuarioTest extends ConfiguracaoApi  {
+public class UsuarioTest  {
+	
+	 private UsuarioFalso usuarioTeste ;
+	 private UsuarioServico servUsuario; 
+	  
+	@BeforeEach
+	public void configurar() {
+	
+	RequestSpecification request = ConfiguracaoRegrs.configurarRegrs();
+		 
+	 usuarioTeste = new UsuarioFalso();
+	 servUsuario = new UsuarioServico(request);
+		
+	}
+	
     
 	@Test
 	@Order(1)

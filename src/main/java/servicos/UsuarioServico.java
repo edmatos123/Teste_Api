@@ -5,12 +5,11 @@ import static io.restassured.RestAssured.given;
 import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;
 
+import endpoints.Endpoints;
 import io.restassured.specification.RequestSpecification;
 import modelo.RespostaUsuarios;
 import modelo.Usuario;
 import static org.apache.http.HttpStatus.*;
-
-import configuracao.Endpoints;
 
 
 public class UsuarioServico {
