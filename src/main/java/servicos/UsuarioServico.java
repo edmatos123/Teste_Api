@@ -19,8 +19,7 @@ public class UsuarioServico {
 	public UsuarioServico (RequestSpecification spec) {
 		this.spec = spec;
 		
-	}
-	
+	}	
 	
 	public Usuario obterUsuarioId(String id) {		
 		return given().
